@@ -8,7 +8,7 @@ part 'public.g.dart';
 @freezed
 class PublicModel with _$PublicModel {
   const factory PublicModel({
-    required int count,
+    @Default(0) int count,
     required List<EntryModel> entries,
   }) = _PublicModel;
 

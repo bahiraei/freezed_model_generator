@@ -8,7 +8,7 @@ part of 'public.dart';
 
 _$PublicModelImpl _$$PublicModelImplFromJson(Map<String, dynamic> json) =>
     _$PublicModelImpl(
-      count: json['count'] as int,
+      count: json['count'] as int? ?? 0,
       entries: (json['entries'] as List<dynamic>)
           .map((e) => EntryModel.fromJson(e as Map<String, dynamic>))
           .toList(),

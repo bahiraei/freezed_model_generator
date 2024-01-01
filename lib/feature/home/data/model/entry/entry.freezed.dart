@@ -20,13 +20,14 @@ EntryModel _$EntryModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$EntryModel {
-  String? get API => throw _privateConstructorUsedError;
-  String? get Description => throw _privateConstructorUsedError;
-  String? get Auth => throw _privateConstructorUsedError;
-  bool? get HTTPS => throw _privateConstructorUsedError;
-  String? get Cors => throw _privateConstructorUsedError;
-  String? get Link => throw _privateConstructorUsedError;
-  String? get Category => throw _privateConstructorUsedError;
+  @JsonKey(name: "API")
+  String? get api => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
+  String? get auth => throw _privateConstructorUsedError;
+  bool? get https => throw _privateConstructorUsedError;
+  String? get cors => throw _privateConstructorUsedError;
+  String? get link => throw _privateConstructorUsedError;
+  String? get category => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41,13 +42,13 @@ abstract class $EntryModelCopyWith<$Res> {
       _$EntryModelCopyWithImpl<$Res, EntryModel>;
   @useResult
   $Res call(
-      {String? API,
-      String? Description,
-      String? Auth,
-      bool? HTTPS,
-      String? Cors,
-      String? Link,
-      String? Category});
+      {@JsonKey(name: "API") String? api,
+      String? description,
+      String? auth,
+      bool? https,
+      String? cors,
+      String? link,
+      String? category});
 }
 
 /// @nodoc
@@ -63,42 +64,42 @@ class _$EntryModelCopyWithImpl<$Res, $Val extends EntryModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? API = freezed,
-    Object? Description = freezed,
-    Object? Auth = freezed,
-    Object? HTTPS = freezed,
-    Object? Cors = freezed,
-    Object? Link = freezed,
-    Object? Category = freezed,
+    Object? api = freezed,
+    Object? description = freezed,
+    Object? auth = freezed,
+    Object? https = freezed,
+    Object? cors = freezed,
+    Object? link = freezed,
+    Object? category = freezed,
   }) {
     return _then(_value.copyWith(
-      API: freezed == API
-          ? _value.API
-          : API // ignore: cast_nullable_to_non_nullable
+      api: freezed == api
+          ? _value.api
+          : api // ignore: cast_nullable_to_non_nullable
               as String?,
-      Description: freezed == Description
-          ? _value.Description
-          : Description // ignore: cast_nullable_to_non_nullable
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      Auth: freezed == Auth
-          ? _value.Auth
-          : Auth // ignore: cast_nullable_to_non_nullable
+      auth: freezed == auth
+          ? _value.auth
+          : auth // ignore: cast_nullable_to_non_nullable
               as String?,
-      HTTPS: freezed == HTTPS
-          ? _value.HTTPS
-          : HTTPS // ignore: cast_nullable_to_non_nullable
+      https: freezed == https
+          ? _value.https
+          : https // ignore: cast_nullable_to_non_nullable
               as bool?,
-      Cors: freezed == Cors
-          ? _value.Cors
-          : Cors // ignore: cast_nullable_to_non_nullable
+      cors: freezed == cors
+          ? _value.cors
+          : cors // ignore: cast_nullable_to_non_nullable
               as String?,
-      Link: freezed == Link
-          ? _value.Link
-          : Link // ignore: cast_nullable_to_non_nullable
+      link: freezed == link
+          ? _value.link
+          : link // ignore: cast_nullable_to_non_nullable
               as String?,
-      Category: freezed == Category
-          ? _value.Category
-          : Category // ignore: cast_nullable_to_non_nullable
+      category: freezed == category
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
               as String?,
     ) as $Val);
   }
@@ -113,13 +114,13 @@ abstract class _$$EntryModelImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? API,
-      String? Description,
-      String? Auth,
-      bool? HTTPS,
-      String? Cors,
-      String? Link,
-      String? Category});
+      {@JsonKey(name: "API") String? api,
+      String? description,
+      String? auth,
+      bool? https,
+      String? cors,
+      String? link,
+      String? category});
 }
 
 /// @nodoc
@@ -133,42 +134,42 @@ class __$$EntryModelImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? API = freezed,
-    Object? Description = freezed,
-    Object? Auth = freezed,
-    Object? HTTPS = freezed,
-    Object? Cors = freezed,
-    Object? Link = freezed,
-    Object? Category = freezed,
+    Object? api = freezed,
+    Object? description = freezed,
+    Object? auth = freezed,
+    Object? https = freezed,
+    Object? cors = freezed,
+    Object? link = freezed,
+    Object? category = freezed,
   }) {
     return _then(_$EntryModelImpl(
-      API: freezed == API
-          ? _value.API
-          : API // ignore: cast_nullable_to_non_nullable
+      api: freezed == api
+          ? _value.api
+          : api // ignore: cast_nullable_to_non_nullable
               as String?,
-      Description: freezed == Description
-          ? _value.Description
-          : Description // ignore: cast_nullable_to_non_nullable
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      Auth: freezed == Auth
-          ? _value.Auth
-          : Auth // ignore: cast_nullable_to_non_nullable
+      auth: freezed == auth
+          ? _value.auth
+          : auth // ignore: cast_nullable_to_non_nullable
               as String?,
-      HTTPS: freezed == HTTPS
-          ? _value.HTTPS
-          : HTTPS // ignore: cast_nullable_to_non_nullable
+      https: freezed == https
+          ? _value.https
+          : https // ignore: cast_nullable_to_non_nullable
               as bool?,
-      Cors: freezed == Cors
-          ? _value.Cors
-          : Cors // ignore: cast_nullable_to_non_nullable
+      cors: freezed == cors
+          ? _value.cors
+          : cors // ignore: cast_nullable_to_non_nullable
               as String?,
-      Link: freezed == Link
-          ? _value.Link
-          : Link // ignore: cast_nullable_to_non_nullable
+      link: freezed == link
+          ? _value.link
+          : link // ignore: cast_nullable_to_non_nullable
               as String?,
-      Category: freezed == Category
-          ? _value.Category
-          : Category // ignore: cast_nullable_to_non_nullable
+      category: freezed == category
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -178,35 +179,36 @@ class __$$EntryModelImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$EntryModelImpl implements _EntryModel {
   const _$EntryModelImpl(
-      {this.API,
-      this.Description,
-      this.Auth,
-      this.HTTPS,
-      this.Cors,
-      this.Link,
-      this.Category});
+      {@JsonKey(name: "API") this.api,
+      this.description,
+      this.auth,
+      this.https,
+      this.cors,
+      this.link,
+      this.category});
 
   factory _$EntryModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$EntryModelImplFromJson(json);
 
   @override
-  final String? API;
+  @JsonKey(name: "API")
+  final String? api;
   @override
-  final String? Description;
+  final String? description;
   @override
-  final String? Auth;
+  final String? auth;
   @override
-  final bool? HTTPS;
+  final bool? https;
   @override
-  final String? Cors;
+  final String? cors;
   @override
-  final String? Link;
+  final String? link;
   @override
-  final String? Category;
+  final String? category;
 
   @override
   String toString() {
-    return 'EntryModel(API: $API, Description: $Description, Auth: $Auth, HTTPS: $HTTPS, Cors: $Cors, Link: $Link, Category: $Category)';
+    return 'EntryModel(api: $api, description: $description, auth: $auth, https: $https, cors: $cors, link: $link, category: $category)';
   }
 
   @override
@@ -214,21 +216,21 @@ class _$EntryModelImpl implements _EntryModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$EntryModelImpl &&
-            (identical(other.API, API) || other.API == API) &&
-            (identical(other.Description, Description) ||
-                other.Description == Description) &&
-            (identical(other.Auth, Auth) || other.Auth == Auth) &&
-            (identical(other.HTTPS, HTTPS) || other.HTTPS == HTTPS) &&
-            (identical(other.Cors, Cors) || other.Cors == Cors) &&
-            (identical(other.Link, Link) || other.Link == Link) &&
-            (identical(other.Category, Category) ||
-                other.Category == Category));
+            (identical(other.api, api) || other.api == api) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.auth, auth) || other.auth == auth) &&
+            (identical(other.https, https) || other.https == https) &&
+            (identical(other.cors, cors) || other.cors == cors) &&
+            (identical(other.link, link) || other.link == link) &&
+            (identical(other.category, category) ||
+                other.category == category));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType, API, Description, Auth, HTTPS, Cors, Link, Category);
+      runtimeType, api, description, auth, https, cors, link, category);
 
   @JsonKey(ignore: true)
   @override
@@ -246,31 +248,32 @@ class _$EntryModelImpl implements _EntryModel {
 
 abstract class _EntryModel implements EntryModel {
   const factory _EntryModel(
-      {final String? API,
-      final String? Description,
-      final String? Auth,
-      final bool? HTTPS,
-      final String? Cors,
-      final String? Link,
-      final String? Category}) = _$EntryModelImpl;
+      {@JsonKey(name: "API") final String? api,
+      final String? description,
+      final String? auth,
+      final bool? https,
+      final String? cors,
+      final String? link,
+      final String? category}) = _$EntryModelImpl;
 
   factory _EntryModel.fromJson(Map<String, dynamic> json) =
       _$EntryModelImpl.fromJson;
 
   @override
-  String? get API;
+  @JsonKey(name: "API")
+  String? get api;
   @override
-  String? get Description;
+  String? get description;
   @override
-  String? get Auth;
+  String? get auth;
   @override
-  bool? get HTTPS;
+  bool? get https;
   @override
-  String? get Cors;
+  String? get cors;
   @override
-  String? get Link;
+  String? get link;
   @override
-  String? get Category;
+  String? get category;
   @override
   @JsonKey(ignore: true)
   _$$EntryModelImplCopyWith<_$EntryModelImpl> get copyWith =>

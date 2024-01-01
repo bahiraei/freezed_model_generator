@@ -24,6 +24,10 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           if (response.entries.isEmpty) {
             emit(HomeEmpty());
           } else {
+            response.entries[0] = response.entries[0].copyWith(
+              description: 'testing',
+            );
+
             emit(HomeSuccess(data: response));
           }
         } catch (e) {

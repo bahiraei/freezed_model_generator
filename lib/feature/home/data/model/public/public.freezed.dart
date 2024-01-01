@@ -109,13 +109,14 @@ class __$$PublicModelImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$PublicModelImpl implements _PublicModel {
   const _$PublicModelImpl(
-      {required this.count, required final List<EntryModel> entries})
+      {this.count = 0, required final List<EntryModel> entries})
       : _entries = entries;
 
   factory _$PublicModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$PublicModelImplFromJson(json);
 
   @override
+  @JsonKey()
   final int count;
   final List<EntryModel> _entries;
   @override
@@ -160,7 +161,7 @@ class _$PublicModelImpl implements _PublicModel {
 
 abstract class _PublicModel implements PublicModel {
   const factory _PublicModel(
-      {required final int count,
+      {final int count,
       required final List<EntryModel> entries}) = _$PublicModelImpl;
 
   factory _PublicModel.fromJson(Map<String, dynamic> json) =

@@ -8,22 +8,22 @@ part of 'entry.dart';
 
 _$EntryModelImpl _$$EntryModelImplFromJson(Map<String, dynamic> json) =>
     _$EntryModelImpl(
-      API: json['API'] as String?,
-      Description: json['Description'] as String?,
-      Auth: json['Auth'] as String?,
-      HTTPS: json['HTTPS'] as bool?,
-      Cors: json['Cors'] as String?,
-      Link: json['Link'] as String?,
-      Category: json['Category'] as String?,
+      api: json['API'] as String?,
+      description: json['description'] as String?,
+      auth: json['auth'] as String?,
+      https: json['https'] as bool?,
+      cors: json['cors'] as String?,
+      link: json['link'] as String?,
+      category: json['category'] as String?,
     );
 
 Map<String, dynamic> _$$EntryModelImplToJson(_$EntryModelImpl instance) =>
     <String, dynamic>{
-      'API': instance.API,
-      'Description': instance.Description,
-      'Auth': instance.Auth,
-      'HTTPS': instance.HTTPS,
-      'Cors': instance.Cors,
-      'Link': instance.Link,
-      'Category': instance.Category,
+      'API': instance.api,
+      'description': instance.description,
+      'auth': instance.auth,
+      'https': instance.https,
+      'cors': instance.cors,
+      'link': instance.link,
+      'category': instance.category,
     };
