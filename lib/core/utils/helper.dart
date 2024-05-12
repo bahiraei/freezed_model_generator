@@ -14,8 +14,8 @@ class Helper {
       context: context,
       type: ToastificationType.info,
       style: ToastificationStyle.minimal,
-      title: 'پیام!',
-      description: message,
+      title: const Text('پیام!'),
+      description: Text(message),
       alignment: Alignment.topRight,
       autoCloseDuration: const Duration(seconds: 4),
       animationBuilder: (
@@ -46,8 +46,8 @@ class Helper {
       context: context,
       type: type ?? ToastificationType.info,
       style: ToastificationStyle.minimal,
-      title: title,
-      description: description,
+      title: Text(title),
+      description: Text(description),
       alignment: Alignment.topRight,
       autoCloseDuration: const Duration(seconds: 4),
       animationBuilder: (
